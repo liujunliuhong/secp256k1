@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
     s.public_header_files        = 'Sources/*.h'
     s.pod_target_xcconfig = { 
         'VALID_ARCHS' => 'x86_64 armv7 arm64',
-        'DEFINES_MODULE' => 'YES'
+        'HEADER_SEARCH_PATHS' => "$(SDKROOT)/usr/include/GLSecp256k1",
+        'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
     }
   end
