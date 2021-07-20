@@ -16,5 +16,8 @@ Pod::Spec.new do |s|
     s.vendored_libraries         = 'Sources/*.a'
     s.source_files               = 'Sources/*.h'
     s.public_header_files        = 'Sources/*.h'
-    s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
+    s.pod_target_xcconfig = { 
+        'VALID_ARCHS' => 'x86_64 armv7 arm64',
+        'DEFINES_MODULE' => 'YES'
+    }
   end
