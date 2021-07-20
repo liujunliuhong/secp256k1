@@ -8,20 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		BF8AEA2326A6770500526378 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8AEA2226A6770500526378 /* AppDelegate.m */; };
-		BF8AEA2626A6770500526378 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8AEA2526A6770500526378 /* SceneDelegate.m */; };
 		BF8AEA2926A6770500526378 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8AEA2826A6770500526378 /* ViewController.m */; };
 		BF8AEA2C26A6770500526378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8AEA2A26A6770500526378 /* Main.storyboard */; };
 		BF8AEA2E26A6770700526378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8AEA2D26A6770700526378 /* Assets.xcassets */; };
 		BF8AEA3126A6770700526378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8AEA2F26A6770700526378 /* LaunchScreen.storyboard */; };
 		BF8AEA3426A6770700526378 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8AEA3326A6770700526378 /* main.m */; };
+		BF8AEA4126A6AA2C00526378 /* libsecp256k1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8AEA3D26A6AA2C00526378 /* libsecp256k1.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BF8AEA1E26A6770500526378 /* MySecp256k1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySecp256k1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8AEA2126A6770500526378 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF8AEA2226A6770500526378 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BF8AEA2426A6770500526378 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		BF8AEA2526A6770500526378 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		BF8AEA2726A6770500526378 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BF8AEA2826A6770500526378 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BF8AEA2B26A6770500526378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +27,10 @@
 		BF8AEA3026A6770700526378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF8AEA3226A6770700526378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF8AEA3326A6770700526378 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF8AEA3D26A6AA2C00526378 /* libsecp256k1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsecp256k1.a; sourceTree = "<group>"; };
+		BF8AEA3E26A6AA2C00526378 /* secp256k1_recovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1_recovery.h; sourceTree = "<group>"; };
+		BF8AEA3F26A6AA2C00526378 /* secp256k1_preallocated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1_preallocated.h; sourceTree = "<group>"; };
+		BF8AEA4026A6AA2C00526378 /* secp256k1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8AEA4126A6AA2C00526378 /* libsecp256k1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +48,7 @@
 		BF8AEA1526A6770500526378 = {
 			isa = PBXGroup;
 			children = (
+				BF8AEA3C26A6AA2C00526378 /* Sources */,
 				BF8AEA2026A6770500526378 /* MySecp256k1 */,
 				BF8AEA1F26A6770500526378 /* Products */,
 			);
@@ -63,8 +67,6 @@
 			children = (
 				BF8AEA2126A6770500526378 /* AppDelegate.h */,
 				BF8AEA2226A6770500526378 /* AppDelegate.m */,
-				BF8AEA2426A6770500526378 /* SceneDelegate.h */,
-				BF8AEA2526A6770500526378 /* SceneDelegate.m */,
 				BF8AEA2726A6770500526378 /* ViewController.h */,
 				BF8AEA2826A6770500526378 /* ViewController.m */,
 				BF8AEA2A26A6770500526378 /* Main.storyboard */,
@@ -74,6 +76,17 @@
 				BF8AEA3326A6770700526378 /* main.m */,
 			);
 			path = MySecp256k1;
+			sourceTree = "<group>";
+		};
+		BF8AEA3C26A6AA2C00526378 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BF8AEA3D26A6AA2C00526378 /* libsecp256k1.a */,
+				BF8AEA3E26A6AA2C00526378 /* secp256k1_recovery.h */,
+				BF8AEA3F26A6AA2C00526378 /* secp256k1_preallocated.h */,
+				BF8AEA4026A6AA2C00526378 /* secp256k1.h */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +161,6 @@
 				BF8AEA2926A6770500526378 /* ViewController.m in Sources */,
 				BF8AEA2326A6770500526378 /* AppDelegate.m in Sources */,
 				BF8AEA3426A6770700526378 /* main.m in Sources */,
-				BF8AEA2626A6770500526378 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,13 +305,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MySecp256k1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sources",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.galaxy.mysecp256k1.MySecp256k1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,13 +327,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MySecp256k1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sources",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.galaxy.mysecp256k1.MySecp256k1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
