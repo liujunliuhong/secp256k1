@@ -14,6 +14,7 @@
 		BF8AEA3126A6770700526378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8AEA2F26A6770700526378 /* LaunchScreen.storyboard */; };
 		BF8AEA3426A6770700526378 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8AEA3326A6770700526378 /* main.m */; };
 		BF8AEA4126A6AA2C00526378 /* libsecp256k1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8AEA3D26A6AA2C00526378 /* libsecp256k1.a */; };
+		BF8AEA4426A6CB9C00526378 /* GLSecp256k1Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8AEA4326A6CB9C00526378 /* GLSecp256k1Empty.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		BF8AEA3E26A6AA2C00526378 /* secp256k1_recovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1_recovery.h; sourceTree = "<group>"; };
 		BF8AEA3F26A6AA2C00526378 /* secp256k1_preallocated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1_preallocated.h; sourceTree = "<group>"; };
 		BF8AEA4026A6AA2C00526378 /* secp256k1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1.h; sourceTree = "<group>"; };
+		BF8AEA4226A6CB9C00526378 /* GLSecp256k1Empty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLSecp256k1Empty.h; sourceTree = "<group>"; };
+		BF8AEA4326A6CB9C00526378 /* GLSecp256k1Empty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLSecp256k1Empty.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				BF8AEA3E26A6AA2C00526378 /* secp256k1_recovery.h */,
 				BF8AEA3F26A6AA2C00526378 /* secp256k1_preallocated.h */,
 				BF8AEA4026A6AA2C00526378 /* secp256k1.h */,
+				BF8AEA4226A6CB9C00526378 /* GLSecp256k1Empty.h */,
+				BF8AEA4326A6CB9C00526378 /* GLSecp256k1Empty.m */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 				BF8AEA2926A6770500526378 /* ViewController.m in Sources */,
 				BF8AEA2326A6770500526378 /* AppDelegate.m in Sources */,
 				BF8AEA3426A6770700526378 /* main.m in Sources */,
+				BF8AEA4426A6CB9C00526378 /* GLSecp256k1Empty.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
