@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
     s.summary                    = 'secp256k1, support pod'
     s.description                = 'secp256k1, support pod.'
     s.author                     = { 'liujunliuhong' => '1035841713@qq.com' }
-    s.version                    = '1.0.3'
+    s.version                    = '1.0.4'
     s.source                     = { :git => 'https://github.com/liujunliuhong/secp256k1.git', :tag => s.version.to_s }
     s.platform                   = :ios, '10.0'
     s.license                    = { :type => 'MIT', :file => 'LICENSE' }
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     s.requires_arc               = true
     s.static_framework           = true
     s.vendored_libraries         = 'Sources/*.a'
-    s.source_files               = 'Sources/*.h','Sources/*.mswift'
+    s.source_files               = 'Sources/*.h','Sources/*.swift'
     s.public_header_files        = 'Sources/*.h'
     s.pod_target_xcconfig = { 
         'VALID_ARCHS' => 'x86_64 armv7 arm64',
