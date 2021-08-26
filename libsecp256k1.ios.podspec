@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
     s.summary                    = 'secp256k1, support pod'
     s.description                = 'secp256k1, support pod.'
     s.author                     = { 'liujunliuhong' => '1035841713@qq.com' }
-    s.version                    = '1.0.2'
+    s.version                    = '1.0.3'
     s.source                     = { :git => 'https://github.com/liujunliuhong/secp256k1.git', :tag => s.version.to_s }
     s.platform                   = :ios, '10.0'
     s.license                    = { :type => 'MIT', :file => 'LICENSE' }
