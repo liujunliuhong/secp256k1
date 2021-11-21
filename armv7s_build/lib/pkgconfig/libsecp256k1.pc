@@ -1,4 +1,4 @@
-prefix=/Users/jun/Desktop/Me/libsecp256k1-ios/armv7s_build
+prefix=/Users/liujun/Desktop/个人/secp256k1/armv7s_build
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
